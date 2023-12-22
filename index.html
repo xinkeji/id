@@ -14,6 +14,27 @@
 	<body>
 
 <script src="https://cdn.jsdelivr.net/gh/xinkeji/cdn@latest/mm.js" integrity="sha256-S1odRBuSEqquqNBBBG/3Ja83tAmxhXSJ5TSn5NgvdYI=" crossorigin="anonymous"></script>
+		<script type="text/javascript">
+			 window.onload = function() {
+             document.onkeydown = function() {
+                 var e = window.event || arguments[0];
+                 if(e.keyCode == 123) {
+ 
+                     return false;
+                 } else if((e.ctrlKey) && (e.shiftKey) && (e.keyCode == 73)) {
+ 
+                     return false;
+                 } else if((e.shiftKey) && (e.keyCode == 121)){
+
+                     return false;
+                 }
+             };
+             document.oncontextmenu = function() {
+
+                 return false;
+             }
+         }
+		</script>
 
 <div class="JabiSysBg" id="JabiSysBg" style="border-radius: 10px;">
 <style>
