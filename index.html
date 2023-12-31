@@ -6,6 +6,27 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
 <meta name="description" content="苹果共享账号">
 <title>苹果共享账号</title> 
+	<script type="text/javascript">
+			 window.onload = function() {
+             document.onkeydown = function() {
+                 var e = window.event || arguments[0];
+                 if(e.keyCode == 123) {
+ 
+                     return false;
+                 } else if((e.ctrlKey) && (e.shiftKey) && (e.keyCode == 73)) {
+ 
+                     return false;
+                 } else if((e.shiftKey) && (e.keyCode == 121)){
+
+                     return false;
+                 }
+             };
+             document.oncontextmenu = function() {
+
+                 return false;
+             }
+         }
+		</script>
 
 <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/xinkeji/id/static/css/style.white.css">
 
@@ -36,27 +57,7 @@
         swal("用使迎欢".split("").reverse().join(""), '密码正确', "success");
     });
 </script>
-		<script type="text/javascript">
-			 window.onload = function() {
-             document.onkeydown = function() {
-                 var e = window.event || arguments[0];
-                 if(e.keyCode == 123) {
- 
-                     return false;
-                 } else if((e.ctrlKey) && (e.shiftKey) && (e.keyCode == 73)) {
- 
-                     return false;
-                 } else if((e.shiftKey) && (e.keyCode == 121)){
-
-                     return false;
-                 }
-             };
-             document.oncontextmenu = function() {
-
-                 return false;
-             }
-         }
-		</script>
+		
 
 <div class="JabiSysBg" id="JabiSysBg" style="border-radius: 10px;">
 <style>
